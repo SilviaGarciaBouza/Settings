@@ -4,49 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
     android:layout_marginHorizontal="16dp"
-    android:layout_marginVertical="16dp">
+    android:layout_marginVertical="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
         <ImageView
             android:id="@+id/iv_wifi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/va_wifi"
+            android:layout_gravity="center"
             android:layout_marginHorizontal="16dp"
-            android:layout_gravity="center"/>
+            android:src="@drawable/va_wifi" />
+
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="1"
             android:layout_marginHorizontal="16dp"
-            android:gravity="center_vertical">
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
             <TextView
                 android:id="@+id/tv_title_wifi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
                 android:text="@string/wifi"
-                android:textColor="@color/black"
-                android:textSize="14sp"/>
+                android:textColor="@color/tittle"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/tv_description_wifi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/wifi_description"
-                android:textColor="@color/grey"
-                android:textSize="12sp"/>
+                android:textColor="@color/subtittle"
+                android:textSize="12sp" />
         </androidx.appcompat.widget.LinearLayoutCompat>
+
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/sc_wifi"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 
@@ -54,47 +60,52 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal">
+
         <ImageView
             android:id="@+id/iv_bluetooth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginHorizontal="16dp"
-            android:src="@drawable/as_bluetooth"
-            android:layout_gravity="center"/>
+            android:src="@drawable/as_bluetooth" />
+
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="1"
             android:layout_marginHorizontal="16dp"
-            android:gravity="center_vertical">
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
             <TextView
                 android:id="@+id/tv_title_bluetooth"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
                 android:text="@string/bluetooth"
-                android:textColor="@color/black"
-                android:textSize="14sp"/>
+                android:textColor="@color/tittle"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/tv_description_bluetooth"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/wifi_description"
-                android:textColor="@color/grey"
-                android:textSize="12sp"/>
+                android:text="@string/bluetooth_description"
+                android:textColor="@color/subtittle"
+                android:textSize="12sp" />
         </androidx.appcompat.widget.LinearLayoutCompat>
+
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/sc_bluetooth"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 
     <com.google.android.material.divider.MaterialDivider
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:layout_marginVertical="16dp"/>
+        android:layout_marginVertical="16dp" />
 
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -106,8 +117,8 @@
             android:id="@+id/iv_volume"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
             android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
             android:src="@drawable/va_volume" />
 
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -124,7 +135,7 @@
                 android:layout_height="wrap_content"
                 android:stepSize="1"
                 android:valueFrom="0"
-                android:valueTo="100"/>
+                android:valueTo="100" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -133,96 +144,106 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
         <ImageView
             android:id="@+id/iv_vibration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginHorizontal="16dp"
-            android:src="@drawable/va_vibration"
-            android:layout_gravity="center"/>
+            android:src="@drawable/va_vibration" />
+
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="1"
             android:layout_marginHorizontal="16dp"
-            android:gravity="center_vertical">
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
             <TextView
                 android:id="@+id/tv_title_vibration"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
                 android:text="@string/vibration"
-                android:textColor="@color/black"
-                android:textSize="14sp"/>
+                android:textColor="@color/tittle"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/tv_description_vibration"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/wifi_description"
-                android:textColor="@color/grey"
-                android:textSize="12sp"/>
+                android:text="@string/vibration_description"
+                android:textColor="@color/subtittle"
+                android:textSize="12sp" />
         </androidx.appcompat.widget.LinearLayoutCompat>
+
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/sc_vibration"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 
     <com.google.android.material.divider.MaterialDivider
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:layout_marginVertical="16dp"/>
+        android:layout_marginVertical="16dp" />
 
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal">
+
         <ImageView
             android:id="@+id/iv_dark_mode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginHorizontal="16dp"
-            android:src="@drawable/va_dark_mode"
-            android:layout_gravity="center"/>
+            android:src="@drawable/va_dark_mode" />
+
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="1"
             android:layout_marginHorizontal="16dp"
-            android:gravity="center_vertical">
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
             <TextView
                 android:id="@+id/tv_title_dark_mode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
                 android:text="@string/dark_mode"
-                android:textColor="@color/black"
-                android:textSize="14sp"/>
+                android:textColor="@color/tittle"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/tv_description_dark_mode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/wifi_description"
-                android:textColor="@color/grey"
-                android:textSize="12sp"/>
+                android:text="@string/dark_mode_description"
+                android:textColor="@color/subtittle"
+                android:textSize="12sp" />
         </androidx.appcompat.widget.LinearLayoutCompat>
+
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/sc_dark_mode"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 
     <com.google.android.material.divider.MaterialDivider
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:layout_marginVertical="16dp"/>
+        android:layout_marginVertical="16dp" />
 
 
 </LinearLayout>

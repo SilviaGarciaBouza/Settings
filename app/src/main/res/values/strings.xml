@@ -3,7 +3,11 @@
     <string name="wifi">Wifi</string>
     <string name="wifi_description">Accede a internet inalámbrigo</string>
     <string name="bluetooth">Bluetooth</string>
+    <string name="bluetooth_description">Vincula dispositivos compatibles</string>
     <string name="volume">Volumen</string>
     <string name="vibration">Vibración</string>
+    <string name="vibration_description">Activa la vibración del dispositivo</string>
     <string name="dark_mode">Modo oscuro</string>
+    <string name="dark_mode_description">Cambia a modo oscuro</string>
+
 </resources>
